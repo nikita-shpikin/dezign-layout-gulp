@@ -6,10 +6,18 @@ html(lang="en")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		link(rel="stylesheet", href="./css/main.min.css")
 
-		//svg надо ниже
-		link(rel="icon", href="./favicons/favicon-16x16.png")
-		link(rel="apple-touch-icon", href="./apple-touch-icon.png")
-		link(rel="manifest", href="./favicons/manifest.webmanifest")
+		// Основная иконка для всех браузеров
+		link(rel="icon" href="/favicon.ico" type="image/x-icon")
+
+		// Для Apple устройств
+		link(rel="apple-touch-icon" href="/apple-touch-icon.png")
+
+		// Манифест для PWA
+		link(rel="manifest" href="/manifest.json")
+		
+		// Windows Tile (если используется)
+		meta(name="msapplication-config" content="/browserconfig.xml")
+
 		script(src='./js/main.js') 
 		title pug
 	body 

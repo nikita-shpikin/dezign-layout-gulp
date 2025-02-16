@@ -1,3 +1,6 @@
+@use 'header/header';
+@use 'fonts';
+
 $base_color: orange;
 
 body {
@@ -6,7 +9,6 @@ body {
 	.title {
 		color: $base_color;
 		font-size: 52px;
+		font-family: 'Inter-ExtraBold';
 	}
 }
-
-@import './header/*.scss';
